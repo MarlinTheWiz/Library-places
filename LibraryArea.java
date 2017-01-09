@@ -8,16 +8,18 @@ public class LibraryArea {
 	private boolean available; // True == available
 	private int capacity;
 	private int availableS; // Available seats
+	private String type; // Single seat or table
 	
 	
 	
-	public LibraryArea (String areaName, int floorNum, int capacity, int availableS){
+	public LibraryArea (String areaName, int floorNum, int capacity, int availableS, String type){
 		
 		this.areaName = areaName;
 		this.floorNum = floorNum;
 		available = (availableS > 0);
 		this.capacity = capacity;
 		this.availableS = availableS;
+		this.type = type;
 		
 	}
 	
@@ -27,8 +29,17 @@ public class LibraryArea {
 		this.floorNum = floorNum;
 		available = true;
 		this.capacity = capacity;
+		type = "Seat";
 	}
 	
+	public LibraryArea (String areaName, int floorNum, int capacity, String type){
+		
+		this.areaName = areaName;
+		this.floorNum = floorNum;
+		available = true;
+		this.capacity = capacity;
+		this.type = type;
 	
+	}
 	
 }
