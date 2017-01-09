@@ -10,18 +10,23 @@ public class WebsterAreasLibrary {
 		LibraryArea france = new LibraryArea("France", 3, 144);
 		LibraryArea india = new LibraryArea("India", 3, 144);
 		LibraryArea collabFloor3 = new LibraryArea("Collaborative Area", 3, 50);
-		LibraryArea[] floor_3 = {france, india, collabFloor3};
+		
 		// Maybe this whole process is useless and I don't need to define LibraryFloor
-		LibraryFloor floor3 = new LibraryFloor(floor_3, 3);
 		
 		// Fourth floor Library areas
-		LibraryArea collabFloor4 = new LibraryArea("Collaborative Area", 4, 50, "tables");
+		LibraryArea collabFloor4 = new LibraryArea("Collaborative Area", 4, 80, "tables");
 		
 		// Fifth floor Library areas
 		LibraryArea collabFloor5 = new LibraryArea("Collaborative Area", 5, 12, "tables");
 		LibraryArea nepal = new LibraryArea("Nepal", 5, 200);
 		LibraryArea argentina = new LibraryArea("Argentina", 5, 200);
+		LibraryArea spain = new LibraryArea("Spain", 5, 200);
+		LibraryArea greenCouches = new LibraryArea("Small Collaborative Area", 5, 6, "Small Green Couches");
 		
+		// Array of all Library areas
+		LibraryArea[] floor = {france, india, collabFloor3, collabFloor4, collabFloor5,
+				nepal, argentina, spain, greenCouches};
+		LibraryFloor library = new LibraryFloor(floor);
 	}
 	
 }

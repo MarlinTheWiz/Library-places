@@ -10,8 +10,6 @@ public class LibraryArea {
 	private int availableS; // Available seats
 	private String type; // Single seat or table
 	
-	
-	
 	public LibraryArea (String areaName, int floorNum, int capacity, int availableS, String type){
 		
 		this.areaName = areaName;
@@ -40,6 +38,11 @@ public class LibraryArea {
 		this.capacity = capacity;
 		this.type = type;
 	
+	}
+	
+	// Add Getters and Setters
+	public int getFloor(){
+		return floorNum;
 	}
 	
 }
