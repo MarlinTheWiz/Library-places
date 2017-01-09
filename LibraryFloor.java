@@ -112,6 +112,29 @@ public class LibraryFloor {
 		}
 	}
 	
+	public String toString(){
+		String firstFloor = "First Floor: No seats\n";
+		String secondFloor = "Second Floor: No seats\n";
+		String thirdFloor = "Third Floor: ";
+		String fourthFloor = "Fourth Floor: ";
+		String fifthFloor = "Fifth Floor: ";
+		
+		for (int i = 0; i < (this.thirdFloor).size(); i++){
+			thirdFloor += ((this.thirdFloor).get(i) + "\n");
+		}
+		
+		for (int i = 0; i < (this.fourthFloor).size(); i++){
+			fourthFloor += ((this.fourthFloor).get(i) + "\n");
+		}
+		
+		for (int i = 0; i < (this.fifthFloor).size(); i++){
+			fifthFloor += ((this.fifthFloor).get(i) + "\n");
+		}
+		
+		return firstFloor + "\n" + secondFloor + "\n" + thirdFloor + "\n" +
+		fourthFloor + "\n" + fifthFloor;
+	}
+	
 	// public void get()
 	
 	

@@ -27,7 +27,7 @@ public class LibraryArea {
 		this.floorNum = floorNum;
 		available = true;
 		this.capacity = capacity;
-		type = "Seat";
+		type = "seats";
 	}
 	
 	public LibraryArea (String areaName, int floorNum, int capacity, String type){
@@ -40,9 +40,41 @@ public class LibraryArea {
 	
 	}
 	
-	// Add Getters and Setters
+	
+	// Getters
+	
+	public String getAreaName(){
+		return areaName;
+	}
+	
 	public int getFloor(){
 		return floorNum;
+	}
+	
+	public boolean getAvailability(){
+		return available;
+	}
+	
+	public int getCapacity(){
+		return capacity;
+	}
+	
+	public int getAvailableSeats(){
+		return availableS;
+	}
+	
+	public String getSeatType(){
+		return type;
+	}
+	
+	
+	// Method to set x amount of free seats in an area (the only useful setter?)
+	public void setAvailableSeats(int seats){
+		availableS = seats;
+	}
+	
+	public String toString(){
+		return areaName + " has " + availableS + " free " + type; 
 	}
 	
 }

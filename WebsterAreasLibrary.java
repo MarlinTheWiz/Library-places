@@ -27,6 +27,8 @@ public class WebsterAreasLibrary {
 		LibraryArea[] floor = {france, india, collabFloor3, collabFloor4, collabFloor5,
 				nepal, argentina, spain, greenCouches};
 		LibraryFloor library = new LibraryFloor(floor);
+		
+		System.out.print(library);
 	}
 	
 }
