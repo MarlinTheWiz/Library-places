@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class LibraryFloor {
 	
@@ -78,6 +79,8 @@ public class LibraryFloor {
 	}
 	*/
 	
+	Scanner input = new Scanner(System.in);
+	
 	private static List<LibraryArea> firstFloor= new ArrayList<LibraryArea>();
 	private static List<LibraryArea> secondFloor= new ArrayList<LibraryArea>();
 	private static List<LibraryArea> thirdFloor= new ArrayList<LibraryArea>();
@@ -135,7 +138,31 @@ public class LibraryFloor {
 		fourthFloor + "\n" + fifthFloor;
 	}
 	
-	// public void get()
+	public LibraryArea getArea(){
+		int fNum = input.nextInt();
+		
+		switch (fNum) {
+		
+			case 1:
+				
+				break;
+			case 2:
+				
+				break;
+			case 3: 
+				
+				break;
+			case 4:
+				
+				break;
+			case 5:
+				
+				break;
+			default:
+				System.out.println("Invalid Area");
+				
+		}
+	}
 	
 	
 }
