@@ -21,14 +21,14 @@ public class WebsterAreasLibrary {
 		LibraryArea nepal = new LibraryArea("Nepal", 5, 200);
 		LibraryArea argentina = new LibraryArea("Argentina", 5, 200);
 		LibraryArea spain = new LibraryArea("Spain", 5, 200);
-		LibraryArea greenCouches = new LibraryArea("Small Collaborative Area", 5, 6, "Small Green Couches");
+		LibraryArea greenCouches = new LibraryArea("Small Collaborative Area", 5, 6, "small green couches");
 		
 		// Array of all Library areas
 		LibraryArea[] floor = {france, india, collabFloor3, collabFloor4, collabFloor5,
 				nepal, argentina, spain, greenCouches};
 		LibraryFloor library = new LibraryFloor(floor);
 		
-		System.out.print(library);
+		//System.out.print(library);
 	}
 	
 }
