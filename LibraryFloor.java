@@ -4,81 +4,6 @@ import java.util.Scanner;
 
 public class LibraryFloor {
 	
-	/*private static LibraryArea[] firstFloor; 
-	private static LibraryArea[] secondFloor;
-	private static LibraryArea[] thirdFloor; // Pretty sure the array lengths are wrong
-	private static LibraryArea[] fourthFloor;
-	private static LibraryArea[] fifthFloor;
-	*/
-	
-	/*public LibraryFloor(LibraryArea[] floor){
-		for (int i = 0; i < floor.length; i++){
-			
-			int length;
-			
-			switch (floor[i].getFloor()) {
-			
-			case 1:
-				length = firstFloor.length;
-				firstFloor[length] = floor[i];
-				break;
-			case 2:
-				length = secondFloor.length;
-				secondFloor[length] = floor[i];
-				break;
-			case 3:
-				length = thirdFloor.length;
-				thirdFloor[length] = floor[i];
-				break;
-			case 4:
-				length = fourthFloor.length;
-				fourthFloor[length] = floor[i];
-				break;
-			case 5:
-				length = fifthFloor.length;
-				fifthFloor[length] = floor[i];
-				break;
-			default:
-				System.out.println("Not a valid floor number");
-			
-			}
-			
-		}
-	}
-	
-	public LibraryFloor(LibraryArea area){
-		
-		int length;
-		
-		switch (area.getFloor()) {
-		
-		case 1:
-			length = firstFloor.length;
-			firstFloor[length] = area;
-			break;
-		case 2:
-			length = secondFloor.length;
-			secondFloor[length] = area;
-			break;
-		case 3:
-			length = thirdFloor.length;
-			thirdFloor[length] = area;
-			break;
-		case 4:
-			length = fourthFloor.length;
-			fourthFloor[length] = area;
-			break;
-		case 5:
-			length = fifthFloor.length;
-			fifthFloor[length] = area;
-			break;
-		default:
-			System.out.println("Not a valid floor number");
-		
-		}
-	}
-	*/
-	
 	Scanner input = new Scanner(System.in);
 	
 	private static List<LibraryArea> firstFloor= new ArrayList<LibraryArea>();
@@ -115,6 +40,7 @@ public class LibraryFloor {
 		}
 	}
 	
+	@SuppressWarnings("static-access")
 	public String toString(){
 		String firstFloor = "First Floor: No seats\n";
 		String secondFloor = "Second Floor: No seats\n";
@@ -140,28 +66,51 @@ public class LibraryFloor {
 	
 	public LibraryArea getArea(){
 		int fNum = input.nextInt();
+		int area;
+		LibraryArea a = new LibraryArea();
 		
 		switch (fNum) {
 		
 			case 1:
-				
+				for (int i = 0; i < firstFloor.size(); i++){
+					System.out.println((firstFloor.get(i)).getAreaName());
+				}
+				area = input.nextInt();
+				a = firstFloor.get(area);
 				break;
 			case 2:
-				
+				for (int i = 0; i < secondFloor.size(); i++){
+					System.out.println((secondFloor.get(i)).getAreaName());
+				}
+				area = input.nextInt();
+				a = secondFloor.get(area);
 				break;
 			case 3: 
-				
+				for (int i = 0; i < thirdFloor.size(); i++){
+					System.out.println((thirdFloor.get(i)).getAreaName());
+				}
+				area = input.nextInt();
+				a = thirdFloor.get(area);
 				break;
 			case 4:
-				
+				for (int i = 0; i < fourthFloor.size(); i++){
+					System.out.println((fourthFloor.get(i)).getAreaName());
+				}
+				area = input.nextInt();
+				a = fourthFloor.get(area);
 				break;
 			case 5:
-				
+				for (int i = 0; i < fifthFloor.size(); i++){
+					System.out.println((fifthFloor.get(i)).getAreaName());
+				}
+				area = input.nextInt();
+				a = fifthFloor.get(area);
 				break;
 			default:
 				System.out.println("Invalid Area");
 				
 		}
+		return a;
 	}
 	
 	
