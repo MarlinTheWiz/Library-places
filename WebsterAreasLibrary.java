@@ -28,7 +28,7 @@ public class WebsterAreasLibrary {
 				nepal, argentina, spain, greenCouches};
 		LibraryFloor library = new LibraryFloor(floor);
 		
-		//System.out.print(library);
+		System.out.print(library.getArea());
 	}
 	
 }
