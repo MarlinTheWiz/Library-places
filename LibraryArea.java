@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 public class LibraryArea {
 	
@@ -9,6 +9,15 @@ public class LibraryArea {
 	private int capacity;
 	private int availableS; // Available seats
 	private String type; // Single seat or table
+	
+	public LibraryArea (){
+		areaName = null;
+		floorNum = 0;
+		available = false;
+		capacity = 0;
+		availableS = 0;
+		type = null;
+	}
 	
 	public LibraryArea (String areaName, int floorNum, int capacity, int availableS, String type){
 		
@@ -76,5 +85,7 @@ public class LibraryArea {
 	public String toString(){
 		return areaName + " has " + availableS + " free " + type; 
 	}
+	
+	
 	
 }
